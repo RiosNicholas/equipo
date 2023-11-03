@@ -33,10 +33,10 @@ const SquadInfo = () => {
         <div>
             <Header />
             <h3 className="text-xl uppercase font-bold text-red-950">Squad Info</h3>
-            <div>
+            <div >
                 {players != null && players.length > 0 ? (
                     players.map((player,index) => 
-                        <div>
+                        <div className="bg-orange-100 text-black rounded p-6 m-2">
                             <Link to={'/playerDetails/' + player.id}>
                             <img className="" src='src/assets/player_outline.png' />
                             </Link>

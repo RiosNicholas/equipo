@@ -38,7 +38,7 @@ const UpdatePlayerForm = () => {
             .from('Equipo')
             .delete()
             .eq('id', id);
-        window.location = "/SquadInfo";
+        window.location = "/squad-info";
     }
 
     const handleChange = (event) => {
@@ -56,23 +56,21 @@ const UpdatePlayerForm = () => {
         <div>
             <form>
                 <div>
-                    <label for="name">Name</label> <br />
-                    <div className="card">
-                        <input type="text" id="name" name="name" value={player.name} onChange={handleChange}/>
-                    </div>
+                    <label for="name">Name</label> 
+                    <input type="text" id="name" name="name" value={player.name} onChange={handleChange}/>
                 </div>
                 
                 <div>
-                    <label for="nationality">Age</label><br />
-                    <div className="card">
-                        <input type="text" id="nationality" name="nationality" value={player.nationality} onChange={handleChange}/>
-                    </div>
+                    <label for="nationality">
+                        Nationality
+                    </label>
+                    <input type="text" id="nationality" name="nationality" value={player.nationality} onChange={handleChange}/>
                 </div>
                     
   
                 <div>
-                    <label for="position">Position</label><br />
-                    <div className="card">
+                    <label for="position">Position</label>
+                    <div>
                         {positions.map((position) => (
                             <li key={position}>
                                 <input 

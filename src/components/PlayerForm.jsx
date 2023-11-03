@@ -26,8 +26,7 @@ const PlayerForm = () => {
                 position: player.position 
             })
             .select();
-
-            window.location = "/SquadInfo";   
+            window.location = "/squad-info";   
     }
 
     return (
@@ -49,7 +48,7 @@ const PlayerForm = () => {
                 
                 <div className="flex flex-col text-center items-center justify-center p-1">
                     <label for="nationality" className="font-semibold text-lg underline">
-                        Age
+                        Nationality
                     </label>
                     <input 
                         type="text" 
