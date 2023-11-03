@@ -11,7 +11,7 @@ const NavBar = () => {
                         <Link to='/player-creation'>Player Creation</Link>                    
                     </li>
                     <li>
-                        <Link to='/squad-info'>Squad Info</Link>                    
+                        <Link to='/squad-info'>Squad Info</Link> 
                     </li>
                 </ul>
             </nav>
