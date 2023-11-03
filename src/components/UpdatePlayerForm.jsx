@@ -56,21 +56,39 @@ const UpdatePlayerForm = () => {
         <div>
             <form>
                 <div>
-                    <label for="name">Name</label> 
-                    <input type="text" id="name" name="name" value={player.name} onChange={handleChange}/>
+                    <label for="name" className="font-semibold text-lg underline">
+                        Name
+                    </label> 
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        value={player.name} 
+                        onChange={handleChange}
+                        className="text-black bg-white rounded w-3/4 flex"
+                    />
                 </div>
                 
                 <div>
-                    <label for="nationality">
+                    <label for="nationality" className="font-semibold text-lg underline">
                         Nationality
                     </label>
-                    <input type="text" id="nationality" name="nationality" value={player.nationality} onChange={handleChange}/>
+                    <input 
+                        type="text" 
+                        id="nationality" 
+                        name="nationality" 
+                        value={player.nationality} 
+                        onChange={handleChange}
+                        className="text-black bg-white rounded w-3/4 flex"
+                    />
                 </div>
                     
   
                 <div>
-                    <label for="position">Position</label>
-                    <div>
+                    <label for="position" className="font-semibold text-lg underline">
+                        Position
+                    </label>
+                    <div className="p-1 pb-4 list-none">
                         {positions.map((position) => (
                             <li key={position}>
                                 <input 
