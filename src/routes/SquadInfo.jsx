@@ -2,6 +2,7 @@ import { supabase } from "../client";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
 const SquadInfo = () => {
     const [players, setPlayers] = useState([]);
@@ -30,6 +31,7 @@ const SquadInfo = () => {
 
     return (
         <div>
+            <Header />
             <h3>Squad Info</h3>
             <div>
                 {players != null && players.length > 0 ? (

@@ -46,8 +46,6 @@ const PlayerForm = () => {
                         <input type="text" id="nationality" name="nationality" value={player.nationality} onChange={handleChange}/>
                     </div>
                 </div>
-                    
-  
                 <div>
                     <label for="position">Position</label><br />
                     <div className="card">

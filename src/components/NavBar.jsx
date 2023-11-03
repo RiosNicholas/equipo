@@ -1,22 +1,20 @@
 import { Outlet, Link } from 'react-router-dom'
 const NavBar = () => {
     return (
-       <>
-            <nav className='nav-bar'>
-                <ul>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/player-creation'>Player Creation</Link>                    
-                    </li>
-                    <li>
-                        <Link to='/squad-info'>Squad Info</Link> 
-                    </li>
-                </ul>
+        <div>
+            <nav className='flex justify-between p-4 m-2'>
+                <Link to="/">
+                    <h2 className='text-red-950 underline font-semibold p-1 rounded hover:bg-slate-100/40'>Home</h2>
+                </Link>
+                <Link to='/create-player'>
+                    <h2 className='text-red-950 underline font-semibold p-1 rounded hover:bg-slate-100/40'>Create a Player</h2>
+                </Link>
+                <Link to='/squad-info'>
+                    <h2 className='text-red-950 underline font-semibold p-1 rounded hover:bg-slate-100/40'>Squad Info</h2>
+                </Link>
             </nav>
-            <Outlet/>
-        </>
+            <Outlet />
+        </div>
     );
 }
 export default NavBar;
