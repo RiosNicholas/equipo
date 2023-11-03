@@ -13,9 +13,7 @@ function App() {
 
   return (
     <div>
-      <NavBar />
       <Header />
-
     </div>
   )
 }
