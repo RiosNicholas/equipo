@@ -61,7 +61,7 @@ const PlayerForm = () => {
                 </div>
 
                 <div className="flex flex-col text-center items-center justify-center p-1">
-                    <label for="position" className="font-semibold text-lg underline">
+                    <label htmlFor="position" className="font-semibold text-lg underline">
                         Position
                     </label>
                     <div className="p-1 pb-4 list-none">
