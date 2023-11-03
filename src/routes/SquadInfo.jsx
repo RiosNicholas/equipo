@@ -32,7 +32,7 @@ const SquadInfo = () => {
     return (
         <div>
             <Header />
-            <h3>Squad Info</h3>
+            <h3 className="text-xl uppercase font-bold text-red-950">Squad Info</h3>
             <div>
                 {players != null && players.length > 0 ? (
                     players.map((player,index) => 
@@ -54,9 +54,13 @@ const SquadInfo = () => {
                         </div>
                         
                 )): 
-                    <div> 
-                        <h2>No players in your squad!</h2>
-                        <button onClick={routeChange}>Add a player</button>
+                    <div className=""> 
+                        <h2 className="bg-orange-100 text-black rounded p-12 m-2 italic">
+                            No players in your squad!
+                        </h2>
+                        <button onClick={routeChange} className="hover:bg-neutral-950 m-1">
+                            Add a Player
+                        </button>
                     </div>
                 }
             </div>

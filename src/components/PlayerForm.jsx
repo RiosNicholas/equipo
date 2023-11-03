@@ -32,7 +32,7 @@ const PlayerForm = () => {
 
     return (
         <div>
-            <form className="bg-orange-100 text-black">
+            <form className="bg-orange-100 text-black rounded p-3 m-2">
                 <div className="flex flex-col text-center items-center justify-center p-1">
                     <label for="name" className="font-semibold text-lg underline">
                         Name
@@ -82,7 +82,7 @@ const PlayerForm = () => {
                 </div>
             </form>
 
-            <button type="submit" onClick={createPlayer} className="m-3 bg-blue-800 hover:bg-blue-900">
+            <button type="submit" onClick={createPlayer} className="m-1 bg-blue-800 hover:bg-blue-900">
                 Create
             </button>
         </div>
