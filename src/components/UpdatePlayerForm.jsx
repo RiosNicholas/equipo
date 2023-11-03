@@ -56,7 +56,7 @@ const UpdatePlayerForm = () => {
         <div>
             <form>
                 <div>
-                    <label for="name" className="font-semibold text-lg underline">
+                    <label htmlFor="name" className="font-semibold text-lg underline">
                         Name
                     </label> 
                     <input 
@@ -70,7 +70,7 @@ const UpdatePlayerForm = () => {
                 </div>
                 
                 <div>
-                    <label for="nationality" className="font-semibold text-lg underline">
+                    <label htmlFor="nationality" className="font-semibold text-lg underline">
                         Nationality
                     </label>
                     <input 

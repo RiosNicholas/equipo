@@ -33,7 +33,7 @@ const PlayerForm = () => {
         <div>
             <form className="bg-orange-100 text-black rounded p-3 m-2">
                 <div className="flex flex-col text-center items-center justify-center p-1">
-                    <label for="name" className="font-semibold text-lg underline">
+                    <label htmlFor="name" className="font-semibold text-lg underline">
                         Name
                     </label> 
                         <input 
@@ -47,7 +47,7 @@ const PlayerForm = () => {
                 </div>
                 
                 <div className="flex flex-col text-center items-center justify-center p-1">
-                    <label for="nationality" className="font-semibold text-lg underline">
+                    <label htmlFor="nationality" className="font-semibold text-lg underline">
                         Nationality
                     </label>
                     <input 
