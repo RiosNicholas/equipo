@@ -2,7 +2,7 @@ import { Outlet, Link } from 'react-router-dom'
 const NavBar = () => {
     return (
         <div>
-            <nav className='flex justify-between p-4 m-2'>
+            <nav className='flex justify-between p-4 m-2 text-xl'>
                 <Link to="/">
                     <h2 className='text-red-950 underline font-semibold p-1 rounded hover:bg-slate-100/40'>Home</h2>
                 </Link>

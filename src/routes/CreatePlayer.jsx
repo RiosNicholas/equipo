@@ -5,8 +5,8 @@ const CreatePlayer = () => {
     return (
         <>
             <Header />
-            <div className="">
-                <h3>Create a New Player</h3>
+            <div className="m-2">
+                <h3 className="text-xl uppercase font-bold text-red-950">Create a New Player</h3>
                 <PlayerForm />
             </div>
         </>
