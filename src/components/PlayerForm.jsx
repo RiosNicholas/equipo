@@ -2,13 +2,13 @@ import { useState } from "react";
 import { supabase } from "../client";
 
 const PlayerForm = () => {
-    const positions = ['GK', 'LB', 'CB', 'RB', 'CDM', 'CM', 'CAM', 'LM', 'RM', 'LW', 'RW', 'ST'];
-    const [player, setPlayers] = useState({name: "", nationality: "", position: ""});
+    const positions = ['GK', 'LB', 'CB', 'RB', 'CDM', 'CM', 'CAM', 'LM', 'RM', 'LW', 'RW', 'CF', 'ST'];
+    const [player, setPlayer] = useState({name: "", nationality: "", position: ""});
 
     const handleChange = (event) => {
         const {name, value} = event.target;
         console.log("Name: ", name, " value: ", value);
-        setCrewmate( (prev) => {
+        setPlayer( (prev) => {
             return {
                 ...prev,
                 [name]:value,

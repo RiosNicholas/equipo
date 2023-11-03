@@ -4,17 +4,17 @@ import { useParams } from 'react-router-dom';
 
 const UpdatePlayerForm = () => {
     const {id} = useParams();
-    const positions = ['GK', 'LB', 'CB', 'RB', 'CDM', 'CM', 'CAM', 'LM', 'RM', 'LW', 'RW', 'ST'];
+    const positions = ['GK', 'LB', 'CB', 'RB', 'CDM', 'CM', 'CAM', 'LM', 'RM', 'LW', 'RW', 'CF', 'ST'];
     const [player, setPlayer] = useState({name: "", nationality: "", position: ""});
 
     useEffect(() => {
         const getPlayer = async () => {
             const {data, error} = await supabase
-                .from('Crewmates')
+                .from('Equipo')
                 .select()
                 .eq('id', id);
 
-            console.log(data[0].color);
+            console.log(data[0].id);
             setPlayer({name: data[0].name, nationality: data[0].nationality, position: data[0].position});
         }
 
