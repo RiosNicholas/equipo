@@ -1,14 +1,16 @@
 import { useState } from 'react'
-import 
 import './app.css'
+import { Routes, Route, Navigate, Outlet } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import Header from './components/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-
-    </>
+    <div>
+      {/* <NavBar /> */}
+      <Header />
+    </div>
   )
 }
 
