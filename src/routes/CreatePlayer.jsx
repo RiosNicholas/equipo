@@ -1,6 +1,6 @@
 import PlayerForm from "../components/PlayerForm";
 
-const PlayerCreation = () => {
+const CreatePlayer = () => {
     return (
         <div className="">
             <h3>Create a New Player</h3>
@@ -9,4 +9,4 @@ const PlayerCreation = () => {
     ); 
 }
 
-export default PlayerCreation;
+export default CreatePlayer;
